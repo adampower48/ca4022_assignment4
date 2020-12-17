@@ -52,6 +52,7 @@ ORDER BY items_stocked_by_store DESC
 LIMIT 10;
 
 # Check which items are stocked in the most stores
+
 SELECT Item_description, COUNT(DISTINCT Store_Name) as stores_that_stock_item
 FROM liquor_data 
 GROUP BY Item_description
