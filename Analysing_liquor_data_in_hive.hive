@@ -42,3 +42,19 @@ tblproperties ("skip.header.line.count" = "1");
 
 
 LOAD DATA INPATH 'hdfs://ca4022-m/user/adam/csv/cleaned2.csv' OVERWRITE INTO TABLE liquor_data;
+
+# Check which stores stock the most items
+
+SELECT Store_Name, COUNT(DISTINCT Item_number) as items_stocked_by_store
+FROM liquor_data 
+GROUP BY Store_Name
+ORDER BY items_stocked_by_store DESC
+LIMIT 10;
+
+# Check which items are stocked in the most stores
+SELECT Item_description, COUNT(DISTINCT Store_Name) as stores_that_stock_item
+FROM liquor_data 
+GROUP BY Item_description
+ORDER BY stores_that_stock_item DESC
+LIMIT 10;
+
