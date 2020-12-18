@@ -1,4 +1,4 @@
-# ca4022 Assignment 4 - Large Scale Data Analysis  
+# CA4022 Assignment 4 - Large Scale Data Analysis  
 Analysis on the [Iowa Liquor Sales](https://www.kaggle.com/residentmario/iowa-liquor-sales) dataset from Kaggle.  
 
 ## Data Cleaning
