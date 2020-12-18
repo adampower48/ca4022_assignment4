@@ -1,4 +1,6 @@
-# ca4022_assignment4
+# ca4022 Assignment 4 - Large Scale Data Analysis  
+Analysis on the [Iowa Liquor Sales](https://www.kaggle.com/residentmario/iowa-liquor-sales) dataset from Kaggle.  
+
 ## Data Cleaning
 - [Pig](Cleaning_liquor_data_in_pig.pig)  
 - [Spark](Spark&#32;Cleaning.ipynb)  
